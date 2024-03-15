@@ -1,0 +1,403 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	font-family: 'Righteous', cursive;
+
+}
+
+.Home{
+
+    min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)), url("/static/Images/Background/3PNG.png");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+    border-radius: 5px;
+}
+
+/* CSS code for nav bar */
+.navbar{
+	
+	display: flex;
+	padding: 1% 1%;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 0 0 25px 25px;
+	background: rgba(4,9,30,0.9);
+}
+
+/* CSS code to makke the nav bar fixed to the top */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #34495ef5;
+  }
+
+
+  nav img{
+	
+	width: 120px;
+    transition: 0.5s;
+
+}
+
+nav img:hover{
+	
+	transform: scale(2);
+    margin-top: 23px;
+
+}
+
+/* CSS code for the nav links */
+.nav-links{
+	
+	flex: 1;
+	text-align: right;
+	
+}
+
+
+.nav-links ul li{
+	
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+	
+}
+
+
+.nav-links ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.nav-links ul li::after{
+	
+	content: '';
+	width: 0%;
+	height: 5px;
+	background: white;
+	display: block;
+	margin: auto;
+	transition: 0.4s;
+	
+}
+
+
+.nav-links ul li:hover::after{
+	
+	width: 100%;
+	
+}
+
+/* CSS code for the nav icons*/
+nav.fa{
+	
+	display: none;
+}
+
+nav .fa-times-circle{
+	
+	display: none;
+}
+
+nav .fa-bars{
+	
+	display: none;
+}
+
+
+h1{
+
+    font-size: 32px;
+    text-align: center;
+    color: white;
+
+}
+
+/* CSS code for the main body section */
+.Body{
+
+    margin-top: 120px;
+    
+}
+
+/* CSS code for the video element*/
+.Video {
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 515px;
+    width: 470px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: cover;
+    background-color: rgba(255, 255, 255, 0.87);
+
+}
+
+/* CSS for the ouput box */
+.OutputBox{
+
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 55px;
+    width: 470px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+  
+
+/* CSS code for media query for smaller screen devices */
+@media(max-width: 700px){
+	
+	.Video {
+        height: 430px;
+        width: 410px;
+        
+    }
+
+    .OutputBox{
+
+        height: 55px;
+        width: 410px;
+        
+    }
+
+    .Body{
+
+        margin-top: 100px;
+        
+    }
+
+    h1{
+
+        font-size: 24px;
+        
+    }
+
+    .nav-links ul li{
+		
+		display: block;
+	}
+	
+	.nav-links{
+		
+		position: absolute;
+		background: #34495ef5;
+		height: 1000vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 0.8s;
+	}
+	
+	.nav-links ul{
+		
+		padding: 32px;
+		
+	}
+	
+	nav .fa{
+		
+		display: block;
+		color: white;
+		margin: 10px;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	
+	nav .fa-times-circle{
+		
+		display: block;
+		color: white;
+		margin: 10px;
+		font-size: 30px;
+		cursor: pointer;
+	}
+	
+	nav .fa-bars{
+		
+		display: block;
+		color: white;
+		margin: 10px;
+		font-size: 30px;
+		cursor: pointer;
+	}
+
+
+    .text-box h1{
+	
+        font-size: 46px;
+        font: bolder;
+        color: white;
+    }
+    
+    
+    .text-box h2{
+        
+        font-size: 18px;
+        margin: 180px 0 40px;
+        color: white;
+    }
+
+    .row{
+		
+		flex-direction: column;
+        margin-bottom: 15px;
+	}
+
+}
+
+
+.Footer {
+    background-color: #34495E;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .FtrImg{
+
+    width: 120px;
+  }
+
+  .BodyImg{
+
+    width: 150px;
+    display: block;
+    margin: auto;
+  }
+
+  .text-box{
+	
+	width: 90%;
+	color: rgba(255, 255, 255, 0.839);
+    margin-top: 20px;
+	text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+
+.text-box h1{
+	
+	font-size: 86px;
+	font: bolder;
+	color: rgba(255, 255, 255, 0.839);
+    transition: 0.5s;
+}
+
+.text-box h1:hover{
+	
+	transform: scale(1.8);
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.text-box h2{
+	
+	font-size: 38px;
+	margin: 180px 0 40px;
+	color: rgba(255, 255, 255, 0.839);
+    transition: 0.5s;
+}
+
+.text-box h2:hover{
+	
+	transform: scale(1.8);
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+.row{
+	
+	margin: 10%;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.InfoBox{
+	
+	flex-basis: 31%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 15px;
+	margin-bottom: 15px;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+
+
+.InfoBox:hover{
+	
+	box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.5); 
+}
+
+h4{
+	
+    font-size: 28px;
+	text-align: center;
+	margin: 10px 0;
+	color: black;
+}
+
+
+.InfoBox p{
+	
+	color: black;
+	font-size: 18px;
+	line-height: 23px;
+	padding: 12px;
+    text-align: justify;
+	
+}
+
+.RUBoxLoc{
+	
+	flex-basis: 87%;
+    background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 15px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	margin-left: 7%;
+	position: relative;
+	overflow: hidden;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	
+}
+
+
+.RUBoxLoc:hover{
+	
+	box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.5); 
+}
+
+iframe{
+	
+	width: 100%;
+	height: 450px;
+	
+}
